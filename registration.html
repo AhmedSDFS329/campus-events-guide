@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Campus Events Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input class="dark-toggle" type="checkbox" id="dark-mode">
+
+    <header class="site-header">
+        <div class="brand">
+            <img src="assets/images/aswan-logo-1.png" alt="Aswan University logo">
+            <div>
+                <h1>Campus Events Guide</h1>
+                <p>Aswan University | Discover, learn, and connect.</p>
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="event-details.html">Event Details</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <label class="dark-label" for="dark-mode">Toggle dark mode</label>
+    </header>
+
+    <main>
+        <section class="panel">
+            <p class="eyebrow">Save your place</p>
+            <h2>Register for Innovation Day</h2>
+            <p><strong>Date:</strong> November 10, 2026</p>
+            <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+            <p><strong>Venue:</strong> Main Campus Hall, Aswan University</p>
+            <p>Complete the form below. This demonstration form checks your input in the browser but does not save submissions.</p>
+        </section>
+
+        <section class="panel">
+            <h2>Attendee Information</h2>
+
+            <form action="#" method="get">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name"
+                       placeholder="Enter your full name"
+                       required minlength="2" maxlength="60"
+                       pattern="[A-Za-z ]{2,60}"
+                       title="Enter 2 to 60 English letters and spaces">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="name@example.com" required>
+
+                <label for="website">Personal Website</label>
+                <input type="url" id="website" name="website"
+                       placeholder="https://example.com">
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age"
+                       min="16" max="100" required>
+
+                <label for="interest">Interest in the Event (1-10)</label>
+                <input type="range" id="interest" name="interest"
+                       min="1" max="10" value="5">
+
+                <label for="event-date">Preferred Attendance Date</label>
+                <input type="date" id="event-date" name="event-date"
+                       min="2026-11-10" max="2026-11-20" required>
+
+                <label for="favorite-color">Favorite Event Color</label>
+                <input type="color" id="favorite-color"
+                       name="favorite-color" value="#1d5268">
+
+                <label for="arrival-time">Expected Arrival Time</label>
+                <input type="time" id="arrival-time"
+                       name="arrival-time" required>
+
+                <label for="student-card">Upload Student ID or Supporting File</label>
+                <input type="file" id="student-card" name="student-card"
+                       accept="image/*,.pdf">
+
+                <label for="event-choice">Choose an Event</label>
+                <select id="event-choice" name="event-choice" required>
+                    <option value="">Select an event</option>
+                    <option value="innovation-day">Innovation Day</option>
+                    <option value="career-workshop">Career Workshop</option>
+                    <option value="science-fair">Science Fair</option>
+                </select>
+
+                <fieldset>
+                    <legend>Attendance Type</legend>
+                    <label>
+                        <input type="radio" name="attendance"
+                               value="in-person" required>
+                        In person
+                    </label>
+                    <label>
+                        <input type="radio" name="attendance"
+                               value="online">
+                        Online
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Access Needs</legend>
+                    <label>
+                        <input type="checkbox" name="access-needs"
+                               value="accessible-seating">
+                        Accessible seating
+                    </label>
+                    <label>
+                        <input type="checkbox" name="access-needs"
+                               value="other-support">
+                        Other support
+                    </label>
+                </fieldset>
+
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments"
+                          rows="4" maxlength="400"
+                          placeholder="Tell us about any questions or needs"></textarea>
+
+                <label>
+                    <input type="checkbox" name="confirm" required>
+                    I confirm that the information provided is correct.
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Event Contact</h2>
+            <p><strong>Department:</strong> Student Activities, Aswan University</p>
+            <p><strong>Email:</strong> student.activities@example.com</p>
+            <p><strong>Location:</strong> Main Campus Hall, Aswan University</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Campus Events Guide | Aswan University</p>
+        <p>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>

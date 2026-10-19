@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details | Campus Events Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input class="dark-toggle" type="checkbox" id="dark-mode">
+
+    <header class="site-header">
+        <div class="brand">
+            <img src="assets/images/aswan-logo-1.png" alt="Aswan University logo">
+            <div>
+                <h1>Campus Events Guide</h1>
+                <p>Aswan University | Discover, learn, and connect.</p>
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="event-details.html">Event Details</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <label class="dark-label" for="dark-mode">Toggle dark mode</label>
+    </header>
+
+    <main>
+        <section class="panel">
+            <p class="eyebrow">Featured campus event</p>
+            <h2>Innovation Day</h2>
+            <img class="detail-image" src="assets/images/aswan-nile-2.jpg" alt="Aswan scenery for Innovation Day">
+
+            <p><strong>Date:</strong> November 10, 2026</p>
+            <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+            <p><strong>Venue:</strong> Main Campus Hall, Aswan University</p>
+            <p>Join students to share creative ideas, discover new technologies, and celebrate practical projects in a friendly campus environment.</p>
+            <p><strong>Entry:</strong> Free for university students.</p>
+            <a class="button" href="registration.html">Register for this Event</a>
+        </section>
+
+        <section class="panel">
+            <h2>Event Agenda</h2>
+            <ul class="agenda">
+                <li>10:00 AM - Opening ceremony</li>
+                <li>11:00 AM - Student project exhibitions</li>
+                <li>1:00 PM - Innovation presentations</li>
+                <li>3:00 PM - Awards and closing</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>Discover Aswan - Video</h2>
+            <p>Watch a video about Aswan and its surroundings.</p>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/pC9BGPn4_4w"
+                    title="Discover Aswan"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="assets/media/أذكار الصباح-mp3.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <section class="panel">
+            <h2>Write an Event Review</h2>
+
+            <form action="#" method="get">
+                <label for="review-name">Your Name</label>
+                <input type="text" id="review-name" name="review-name"
+                       required maxlength="50" pattern="[A-Za-z ]{2,50}"
+                       title="Use English letters and spaces">
+
+                <label for="review-email">Email</label>
+                <input type="email" id="review-email" name="review-email" required>
+
+                <label for="rating">Rating (1-5)</label>
+                <input type="number" id="rating" name="rating"
+                       min="1" max="5" required>
+
+                <label for="review">Your Review</label>
+                <textarea id="review" name="review" rows="4"
+                          maxlength="500" required></textarea>
+
+                <label for="review-file">Upload a File</label>
+                <input type="file" id="review-file" name="review-file"
+                       accept="image/*,.pdf" required>
+
+                <div class="form-actions">
+                    <button type="submit">Submit Review</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Campus Events Guide | Aswan University</p>
+        <p>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
